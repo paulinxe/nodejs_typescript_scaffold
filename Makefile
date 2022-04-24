@@ -10,3 +10,10 @@ install:
 run:
 	@docker-compose up -d
 	@docker exec -it nodejs_nodejs_typescript_1 npm run start
+
+run-dev:
+	@docker-compose up -d
+	@docker exec -it nodejs_nodejs_typescript_1 npm run start-dev
+
+stop:
+	@docker-compose down
